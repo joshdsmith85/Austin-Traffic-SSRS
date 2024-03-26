@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Austin Traffic", "Austin Traffic\Austin Traffic.rptproj", "{481767CE-E3B7-45EB-BE66-B854F20E69C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{481767CE-E3B7-45EB-BE66-B854F20E69C6}.Debug|Default.ActiveCfg = Debug
+		{481767CE-E3B7-45EB-BE66-B854F20E69C6}.Debug|Default.Build.0 = Debug
+		{481767CE-E3B7-45EB-BE66-B854F20E69C6}.Debug|Default.Deploy.0 = Debug
+		{481767CE-E3B7-45EB-BE66-B854F20E69C6}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{481767CE-E3B7-45EB-BE66-B854F20E69C6}.DebugLocal|Default.Build.0 = DebugLocal
+		{481767CE-E3B7-45EB-BE66-B854F20E69C6}.Release|Default.ActiveCfg = Release
+		{481767CE-E3B7-45EB-BE66-B854F20E69C6}.Release|Default.Build.0 = Release
+		{481767CE-E3B7-45EB-BE66-B854F20E69C6}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B074E059-9122-42F6-8BB3-325933C80D3B}
+	EndGlobalSection
+EndGlobal

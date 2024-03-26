@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description />
+  <DataSet Name="AustinTrafficDataSet">
+    <Query>
+      <DataSourceReference>AustinTraffic</DataSourceReference>
+      <CommandText>SELECT
+       [Traffic Report ID]
+      ,CAST(LEFT([Published Date],10) AS DATE) AS DATE
+	  ,LEFT(CAST((CAST(LEFT([Published Date],22) AS datetime)) AS TIME), 8) AS TIME
+      ,[Issue Reported]
+      ,[Location]
+      ,CONCAT([Latitude], ',', [Longitude]) AS Coordinates
+      ,[Address]
+      ,[Status]
+      ,[Status Date]
+      ,[Agency]
+  FROM [AustinTraffic].[dbo].[Real_Time_Traffic_Incident_Reports]</CommandText>
+      <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+    </Query>
+    <Fields>
+      <Field Name="Traffic_Report_ID">
+        <DataField>Traffic Report ID</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DATE">
+        <DataField>DATE</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="TIME">
+        <DataField>TIME</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Issue_Reported">
+        <DataField>Issue Reported</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Location">
+        <DataField>Location</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Coordinates">
+        <DataField>Coordinates</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Address">
+        <DataField>Address</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Status">
+        <DataField>Status</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Status_Date">
+        <DataField>Status Date</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Agency">
+        <DataField>Agency</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
